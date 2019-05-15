@@ -697,14 +697,14 @@
 <h2 id="k-means-clustering"><strong>K-Means Clustering</strong><a class="headerlink" href="#k-means-clustering" title="Permanent link">&para;</a></h2>
 <p>adalah suatu metode penganalisaan data atau metode Data Mining yang melakukan proses pemodelan tanpa supervisi (unsupervised) dan merupakan salah satu metode yang melakukan pengelompokan data dengan sistem partisi.</p>
 <p>Terdapat dua jenis data clustering yang sering dipergunakan dalam proses pengelompokan data yaitu <strong>Hierarchical</strong> dan <strong>Non-Hierarchical</strong>, dan <strong>K-Means</strong> merupakan salah satu metode data clustering non-hierarchical atau <strong>Partitional Clustering</strong>.</p>
-<p><img alt="partitional-clustering" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" /></p>
-<p><em>Partitional Clustering</em></p>
+<p><img alt="" src="assets/images/1.jpg" /></p>
+<p>​                                   Partitional Clustering</p>
 <p>Metode <strong>K-Means Clustering</strong> berusaha mengelompokkan data yang ada ke dalam beberapa kelompok, dimana data dalam satu kelompok mempunyai karakteristik yang sama satu sama lainnya dan mempunyai karakteristik yang berbeda dengan data yang ada di dalam kelompok yang lain.</p>
-<p><img alt="hierarchical clustering" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg" /></p>
-<p><em>Hierarchical Clustering</em></p>
+<p><img alt="" src="assets/images/2.jpg" /></p>
+<p>​                               Hierarchical Clustering</p>
 <p>Dengan kata lain, metode <strong>K-Means Clustering</strong> bertujuan untuk meminimalisasikan <strong>objective function</strong> yang diset dalam proses clustering dengan cara <strong>meminimalkan variasi antar data yang ada di dalam suatu cluster dan memaksimalkan variasi dengan data yang ada di cluster lainnya</strong>.</p>
-<p><img alt="contoh cluster" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" /></p>
-<p><em>Contoh Cluster</em></p>
+<p><img alt="" src="assets/images/3.jpg" /></p>
+<p>​                                       Contoh Cluster</p>
 <p>Data clustering menggunakan metode <strong>K-Means Clustering</strong> ini secara umum dilakukan dengan algoritma dasar sebagai berikut:</p>
 <p>\1.      Tentukan jumlah cluster</p>
 <p>\2.      Alokasikan data ke dalam cluster secara random</p>
@@ -714,34 +714,34 @@
 <h2 id="contoh-kasus-dalam-versi-excel">Contoh kasus dalam versi excel:<a class="headerlink" href="#contoh-kasus-dalam-versi-excel" title="Permanent link">&para;</a></h2>
 <h3 id="langkah-1"><strong>Langkah 1</strong><a class="headerlink" href="#langkah-1" title="Permanent link">&para;</a></h3>
 <p>Pertama saya akan membuat sebuah data sembarang yang nantinya diterapkan proses    K-mean clustering.</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png" /></p>
+<p><img alt="" src="assets/images/4.png" /></p>
 <p>​                                                                          k-mean excel 1</p>
 <h3 id="langkah-2"><strong>Langkah 2</strong><a class="headerlink" href="#langkah-2" title="Permanent link">&para;</a></h3>
 <p>Setelah itu kita pilih cluster dari salah satu data yang sudah tercantum. Disini saya memilih data 1, data 4, data 7.</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png" /></p>
+<p><img alt="" src="assets/images/5.png" /></p>
 <p>​                                                                       k-mean excel 2</p>
 <h3 id="langkah-3"><strong>Langkah 3</strong><a class="headerlink" href="#langkah-3" title="Permanent link">&para;</a></h3>
 <p>Setalah itu dilakukan pengujian jarak dari setiap centroid</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" /></p>
-<p>K-mean excel 3</p>
+<p><img alt="" src="assets/images/6.png" /></p>
+<p>​                                       K-mean excel 3</p>
 <p>Untuk mencari jarak dari setiap centroid, yang karus kita lakukan adalah mencari akar dari (data ke-1 variabel ke-1 di kurangi cluster ke-1 dari variabel ke-1 (m-centroid1))di kuadratkan atau pangkat 2, ditambah (data ke-1 variabel ke-2 di kurangi cluster ke-1 dari variabel ke-2 (m-centroid2))di kuadratkan atau pangkat 2, ditambah lagi(data ke-1 variabel ke-3 di kurangi cluster ke-1 dari variabel ke-3 (m-centroid3))di kuadratkan atau pangkat 2,sampai variable ke-n. Dan jangan lupa di akar 2 lalu diteruskan ke data ke-2 sampai data ke-n. Atau lebih gampangannya lihat dibawah ini:</p>
 <p>#Untuk sel B11</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png" /></p>
+<p><img alt="" src="assets/images/6a.png" /></p>
 <p>Di sel B11 menyatakan jumlah jarak antara “data1” dengan “cluster1”</p>
 <p>#Untuk sel C11</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png" /></p>
+<p><img alt="" src="assets/images/6b.png" /></p>
 <p>Di sel C11 menjelaskan jumlah jarak antara “data1” dengan “cluster2”</p>
 <p>#Untuk  sel D11</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png" /></p>
+<p><img alt="" src="assets/images/6c.png" /></p>
 <p>Di sel D11 menjelaskan jumlah jarak antara “data1” dengan “cluster3”</p>
 <p>#Untuk  sel B12</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png" /></p>
+<p>![img](<img alt="" src="assets/images/6d.png" /></p>
 <p>Di sel B12 menjelaskan jumlah jarak antara “data2” dengan “cluster1”</p>
 <p>Diteruskan  ke jarak antara “data2” dengan “cluster2” ,lalu “data2” dengan “cluster3” hingga sampai jarak antara data ke-n dengan cluster ke-n.</p>
 <p>Lalu untuk apa “tabel min” pada gambar diatas? Tabel tersebut ditujukan untuk melihat jarak terdekat dari setiap data kepada setiap cluster, jarak terdekat akan dipilih  untuk penentuan cluster baru</p>
 <h3 id="langkah-4"><strong>Langkah 4</strong><a class="headerlink" href="#langkah-4" title="Permanent link">&para;</a></h3>
 <p>Menentukan pusat cluster baru dengan cara menghitung rata rata dari anggota cluster dari setiap cluster. Dan disini saya mendapatkan cluster baru sebagai berikut :</p>
-<p><img alt="img" src="file:///C:/Users/Labbis9/AppData/Local/Temp/msohtmlclip1/01/clip_image013.png" /></p>
+<p><img alt="" src="assets/images/7.png" /></p>
 <h3 id="langkah-5"><strong>Langkah 5</strong><a class="headerlink" href="#langkah-5" title="Permanent link">&para;</a></h3>
 <p>Mengulangi langkah 2, 3, 4, sampai tidak ada data yang akan berubah tempat clusternya.</p>
 <h1 id="k-nearest-neighbor"><strong>K-Nearest Neighbor</strong><a href="https://wandhayuwa.github.io/170441100050_Yuwandha/#k-nearest-neighbor">¶</a><a class="headerlink" href="#k-nearest-neighbor" title="Permanent link">&para;</a></h1>
@@ -754,10 +754,11 @@
 <p><strong>Klasifikasi Terdekat (Nearest Neighbor Classification)</strong></p>
 <p>Teknik pencarian tetangga terdekat yang umum dilakukan dengan menggunakan formula jarak euclidean*.* Berikut beberapa formula yang digunakan dalam algoritma knn.</p>
 <ol>
-<li><strong>Euclidean Distance</strong></li>
+<li>
+<h4 id="euclidean-distance">Euclidean Distance<a class="headerlink" href="#euclidean-distance" title="Permanent link">&para;</a></h4>
+</li>
 </ol>
 <p>Teknik paling banyak digunakan. Jarak Euclidean adalah formula untuk mencari jarak antara 2 titik dalam ruang dua dimensi.</p>
-<p><a href="https://wandhayuwa.github.io/170441100050_Yuwandha/assets/images"><img alt="Material for MkDocs" src="https://wandhayuwa.github.io/170441100050_Yuwandha/assets/images/euclidean.jpg" /></a></p>
 <h6 id="2-hamming-distance">2. <strong>Hamming Distance</strong><a href="https://wandhayuwa.github.io/170441100050_Yuwandha/#2-hamming-distance">¶</a><a class="headerlink" href="#2-hamming-distance" title="Permanent link">&para;</a></h6>
 <p>Jarak Hamming adalah cara mencari jarak antar 2 titik yang dihitung dengan panjang vektor biner yang dibentuk oleh dua titik tersebut dalam block kode biner.</p>
 <h6 id="3-manhattan-distance">3. <strong>Manhattan Distance</strong><a href="https://wandhayuwa.github.io/170441100050_Yuwandha/#3-manhattan-distance">¶</a><a class="headerlink" href="#3-manhattan-distance" title="Permanent link">&para;</a></h6>
@@ -777,7 +778,7 @@
 <p>Untuk menggunakan algoritma k nearest neighbors, perlu ditentukan banyaknya k tetangga terdekat yang digunakan untuk melakukan klasifikasi data baru. Banyaknya k, sebaiknya merupakan angka ganjil, misalnya k = 1, 2, 3, dan seterusnya. Penentuan nilai k dipertimbangkan berdasarkan banyaknya data yang ada dan ukuran dimensi yang dibentuk oleh data.</p>
 <h3 id="implementasi">IMPLEMENTASI<a href="https://wandhayuwa.github.io/170441100050_Yuwandha/#implementasi">¶</a><a class="headerlink" href="#implementasi" title="Permanent link">&para;</a></h3>
 <p>UC Irvine Machine Learning Repository</p>
-<p><a href="https://wandhayuwa.github.io/170441100050_Yuwandha/assets/images/material.png"><img alt="Material for MkDocs" src="https://wandhayuwa.github.io/170441100050_Yuwandha/assets/images/flower.jpg" /></a></p>
+<p><img alt="" src="assets/images/download.jpg" /></p>
 <p>Data yang digunakan dibawah ini adalah Iris Flower Dataset(IFD) yang pertama kali diperkenalkan pada tahun 1936 oleh ahli statistic terkenal Ronald Fisher dan terdiri dari 50 pengamatan dari masing- masing 3 spesies Iris (Iris Setosa, Iris Virginica, dan Iris Versicolor). Empat fitur diukur dari masing-masing sampel : sepal_length, sepal_width, petal_lenght, petal_width.</p>
 <p>Script dibawah ini menggunakan python.</p>
 <pre class="codehilite"><code>#memuat/membuat library
